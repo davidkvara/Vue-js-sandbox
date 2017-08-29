@@ -85,3 +85,15 @@ var loop = new Vue({
 		]
 	}
 });
+
+var reverse = new Vue({
+	el:'#reverse',
+	data:{
+		h3:'reversing message',
+	},
+	methods:{
+		reverse: function(){
+			this.h3 = this.h3.split('').reverse().join('');
+		}
+	}
+});
