@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue JS Sandbox</title>
+	<link rel="stylesheet" href="css/some.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<h3>vue data binding</h3>
+		<input type="text" v-model="message" v-on:keydown="nice" value="name">
+		<p>{{message}}</p>
+		<p v-html="link"></p>
+	</div>
+	<div id="app-2">
+		<h3>vue data binding</h3>
+		<span :title="message">
+			Hover your mouse over me for a few seconds
+			to see my dynamically bound title!
+		</span>
+	</div>
+	<div id="app3" v-on:mousemove="reaction">
+		<p>{{x}},{{y}}</p>
+	</div>
+
+	<div id="app4">
+		<h3>vue events click(inc-dec)</h3>
+		<p class="cvladi">{{age}}</p>
+		<button v-on:click="inc(2)">increment by 2</button><button v-on:click="dec">decrement</button>
+	</div>
+	<div id="app5">
+		<h3>{{text}}</h3>
+		<p v-if="seen" class="seen">Lorem ipsum dolor sit amet.</p>
+	</div>
+
+	<div id="app6">
+		<h3>Vue Loop</h3>
+		<ul>
+			<li v-for="one in many">
+				{{one.text}}
+			</li>
+		</ul>
+		<ol>
+			<li v-for="one in all">{{one.sxva}}</li>
+		</ol>
+
+	</div>
+
+	<div id="loop">
+	<h3>{{independent}}</h3>
+		<ol class="mine">
+			<li v-for="erti in bevri">{{erti.sia}}</li>
+		</ol>
+	</div>
+
+
+
+
+	<script src="some.js"></script>
+
+</body>
+</html>
