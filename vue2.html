@@ -44,9 +44,7 @@
 		<ol>
 			<li v-for="one in all">{{one.sxva}}</li>
 		</ol>
-
 	</div>
-
 
 	<div id="app7">
 		<h3>{{text}}</h3>
@@ -55,8 +53,8 @@
 		</ul>
 		<input type="text" v-model="name">
 		<button @click="addName">append</button>
+		<button @click="removeName">remove</button>
 	</div>
-
 
 	<div id="loop">
 	<h3>{{independent}}</h3>

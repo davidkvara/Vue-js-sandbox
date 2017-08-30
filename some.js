@@ -109,6 +109,9 @@ var larapend = new Vue({
 		addName: function(){
 			this.names.push(this.name);
 			this.name='';
+		},
+		removeName: function(){
+			this.names.pop();
 		}
 	}
 });
