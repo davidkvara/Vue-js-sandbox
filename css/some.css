@@ -1,6 +1,6 @@
 html{font-family: sans-serif;background:#f8f8f8;}
 body{padding: 20px 100px 100px;border:10px solid #42b983;outline:10px solid #35495e;box-sizing: border-box;color: #34495e}
-input{
+#app input{
 	padding: 10px;
 	font-size: 18px;
 	width: 280px;
@@ -34,10 +34,6 @@ h3{
 	display: block;
 	pointer-events: none;
 }
-button{
-	margin: 5px;
-	padding: 5px;
-}
 .cvladi{
 	margin: 0 30px 10px;
 	font-size: 30px;
@@ -51,3 +47,11 @@ button{
 }
 li{line-height: 1.4;background: lightgreen;margin: 4px 0;padding: 4px 10px;}
 .mine li{background: lightblue;}
+input,button{
+	margin: 5px;
+	padding: 5px;
+}
+#app7 li{
+	list-style-type: circle;
+	background: coral;
+}

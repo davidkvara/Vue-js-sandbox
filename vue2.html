@@ -47,6 +47,17 @@
 
 	</div>
 
+
+	<div id="app7">
+		<h3>{{text}}</h3>
+		<ul>
+			<li v-for="name in names">{{name}}</li>
+		</ul>
+		<input type="text" v-model="name">
+		<button @click="addName">append</button>
+	</div>
+
+
 	<div id="loop">
 	<h3>{{independent}}</h3>
 		<ol class="mine">

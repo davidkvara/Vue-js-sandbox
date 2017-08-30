@@ -97,3 +97,18 @@ var reverse = new Vue({
 		}
 	}
 });
+
+var larapend = new Vue({
+	el:'#app7',
+	data: {
+		name:'',
+		text:'append to list [seen on laracasts]',
+		names:['john','sarah','mark','kate']
+	},
+	methods:{
+		addName: function(){
+			this.names.push(this.name);
+			this.name='';
+		}
+	}
+});
