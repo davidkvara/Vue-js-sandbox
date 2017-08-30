@@ -115,3 +115,40 @@ var larapend = new Vue({
 		}
 	}
 });
+
+var example23 = new Vue({
+	el: "#example23",
+	data:{
+		text:'click to disable',
+		isloading:true,
+		ese: false
+	},
+	methods:{
+		toggleC: function(){
+			this.ese = true,
+			this.text = 'disabled'
+		}
+	}
+});
+
+var example24 = new Vue({
+	el:'#computed',
+	data:{
+		text:'tasks: lorem ipsum dolor',
+		text2:'completed tasks: with computed',
+		list:[
+			{task:'read a book', completed: true},
+			{task:'travel the world', completed: false},
+			{task:'build a home', completed: false},
+			{task:'change haircut', completed: true},
+			{task:'sing a song', completed: false},
+			{task:'dance like crazy', completed: false},
+			{task:'learn to swim', completed: false}
+		]
+	},
+	computed:{
+		gaket: function(){
+			return this.list.filter(x => x.completed);
+		}
+	}
+})

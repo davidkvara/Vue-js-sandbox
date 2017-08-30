@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Vue JS Sandbox</title>
 	<link rel="stylesheet" href="css/some.css">
-    <script src="https://unpkg.com/vue"></script>
+	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 	<div id="app">
@@ -68,6 +68,22 @@
 		<button v-on:click="reverse">reverse header</button>
 	</div>
 
+	<h1>day 2</h1>
+
+	<div id="example23">
+		<button :disabled="ese" @click="toggleC">{{text}}</button>
+	</div>
+
+	<div id="computed">
+		<h3>{{text}}</h3>
+		<ul>
+			<li v-for="one in list" v-text="one.task"></li>
+		</ul>
+		<h3>{{text2}}</h3>
+		<ul>
+			<li v-for="one in gaket">{{one.task}}</li>
+		</ul>
+	</div>
 
 
 	<script src="some.js"></script>

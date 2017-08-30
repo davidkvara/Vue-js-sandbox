@@ -7,9 +7,15 @@
     <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-	<h3>new chapter - Composing with Components</h3>
+<h3>new chapter - Composing with Components</h3>
+
+<div id="root">
+	<ol>
+		<task v-for="item in somelist" v-bind:todo="item" v-bind:key="item.id"></task>
+	</ol>
+</div>
 
 
-
+<script src="vue3.js"></script>
 </body>
 </html>

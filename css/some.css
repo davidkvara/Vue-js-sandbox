@@ -55,3 +55,6 @@ input,button{
 	list-style-type: circle;
 	background: #ff9c78;
 }
+.is-loading{
+	background: mediumseagreen;
+}
