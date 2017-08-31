@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>Composing with Components</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+	<style>
+		body{padding: 20px 10px;}
+		h2{text-align: center; text-transform: capitalize;margin-bottom: 20px;}
+	</style>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+
+<div id="bulma">
+	<h2 class="title">{{text}}</h2>
+	<div class="container">
+		<message header="hello world" content="Lorem ipsum dolor sit amet" link="read more"></message>
+		<message header="Lorem ipsum" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci libero, minus officia debitis accusantium. Possimus error quod quo sint, ipsa nam provident recusandae esse eos ducimus porro dolor, beatae mollitia magni? Maxime perferendis labore nobis mollitia voluptas. Impedit veritatis vitae maiores cupiditate reprehenderit animi nemo dolorum provident ullam asperiores, eaque, deleniti distinctio consequuntur! Dicta laudantium, porro impedit, distinctio nisi assumenda officiis dolorem aliquid optio ex, tenetur nihil quaerat iusto at error enim! " link="read more"></message>
+		<message header="hello Vue!" content="Learn Vue 2: Step By Step: Practical Component Exercise #1: Message" link="read more"></message>
+	</div>
+</div>
+
+<script src="component.js"></script>
+</body>
+</html>
