@@ -1,0 +1,37 @@
+*{	box-sizing: border-box}
+body{
+	font-size: 17px;
+	font-family: sans-serif;
+	padding-top: 40px;
+	line-height: 1.4;
+	background: whitesmoke;
+}
+.container{
+	width: calc(100% - 20%);
+	margin: 0 auto 30px;
+	display: flex;
+	border-radius: 4px;
+	overflow: hidden;
+	background: #ececec;
+	flex-direction: column;
+	position: relative;
+	border: 2px solid #2e5871;
+}
+.close{
+	position: absolute;
+	top: 2px;
+	right: 18px;
+	z-index: 2;
+	font-size: 30px;
+	color:#f1f2f3;
+	cursor: pointer;
+}
+.header{font-size: 28px;}
+.header,footer{
+	background: #2e5871;
+	color:#fff;
+	padding: 20px;
+}
+.box{
+	padding: 10px 20px 20px;
+}
