@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* modal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.363);
+}
+
+.message {
+  max-width: 540px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: #f9f9f9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-bottom: 5px solid steelblue;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.message h2 {
+  margin-top: 0;
+}
+
+.message .close-btn {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  font-size: 1.8rem;
+  background: none;
+  border: 0;
+  color: #999;
+}
