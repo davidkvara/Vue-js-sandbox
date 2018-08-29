@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Vue JS Sandbox</title>
-	<link href="https://fonts.googleapis.com/css?family=Gugi&text=Now%20you%20see%20me" rel="stylesheet">
-	<link rel="stylesheet" href="css/examples.css">
-	<script src="https://unpkg.com/vue"></script>
+  <meta charset="UTF-8">
+  <title>Vue JS Sandbox</title>
+  <link href="https://fonts.googleapis.com/css?family=Gugi&text=Now%20you%20see%20me" rel="stylesheet">
+  <link rel="stylesheet" href="css/examples.css">
+  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-	<h1>&laquo; Playground &raquo; </h1>
+  <h1>&laquo; Playground &raquo; </h1>
 
-	<div id="app">
-		<h3 :title="message">vue data binding</h3>
-		<input type="text" v-model="text" @keydown="log">
-		<p><strong>{{text}}</strong></p>
-	</div>
+  <div id="app">
+    <h3 :title="message">vue data binding</h3>
+    <input type="text" v-model="text" @keydown="log">
+    <p><strong>{{text}}</strong></p>
+  </div>
 
-	<div id="app3" @mousemove="reaction">
-		<p>{{x}},{{y}}</p>
-	</div>
+  <div id="app3" @mousemove="reaction">
+    <p>{{x}},{{y}}</p>
+  </div>
 
-	<div id="app4">
-		<h3>vue events click(inc-dec)</h3>
-		<p class="cvladi">{{age}}</p>
-		<input type="number" v-model="number" size="4">
-		<button @click="inc()">increment by {{number}}</button>
-		<button @click="dec">decrement</button>
-	</div>
+  <div id="app4">
+    <h3>vue events click(inc-dec)</h3>
+    <p class="cvladi">{{age}}</p>
+    <input type="number" v-model="number">
+    <button @click="inc()">increment by {{number}}</button>
+    <button @click="dec">decrement</button>
+  </div>
 
-	<div id="app5">
-		<h3>{{text}}</h3>
-		<button @click="toggleVisibility">toggle</button>
-		<div v-if="visible" class="seen">Now you see me</div>
-	</div>
+  <div id="app5">
+    <h3>{{text}}</h3>
+    <button @click="toggleVisibility">toggle</button>
+    <div v-if="visible" class="seen">Now you see me</div>
+  </div>
 
-	<div id="app6">
-		<h3>Vue simple Loop</h3>
-		<ul>
-			<li v-for="one in many">
-				{{one.text}}
-			</li>
-		</ul>
-		<ol>
-			<li v-for="one in all">{{one.sxva}}</li>
-		</ol>
-	</div>
+  <div id="app6">
+    <h3>Vue simple Loop</h3>
+    <ul>
+      <li v-for="one in many">
+        {{one.text}}
+      </li>
+    </ul>
+    <ol>
+      <li v-for="one in all">{{one.sxva}}</li>
+    </ol>
+  </div>
 
-	<div id="app7">
-		<h3>{{text}}</h3>
-		<form @submit.prevent="addName">
-			<input type="text" v-model="name">
-			<button @click="addName">append</button>
-		</form>
-		<ul>
-			<li v-for="(name, i) in contacts">{{name}} --- <button @click="contacts.splice(i, 1)">delete</button></li>
-		</ul>
-	</div>
+  <div id="app7">
+    <h3>{{text}}</h3>
+    <form @submit.prevent="addName">
+      <input type="text" v-model="name">
+      <button @click="addName">append</button>
+    </form>
+    <ul>
+      <li v-for="(name, i) in contacts">{{name}} --- <button @click="contacts.splice(i, 1)">delete</button></li>
+    </ul>
+  </div>
 
-	<br>
+  <br>
 
-	<div id="app9">
-		<h3>{{h3}}</h3>
-		<button v-on:click="reverse">reverse header</button>
-		<button :disabled="yes" @click="toggleC">{{text}}</button>
-	</div>
+  <div id="app9">
+    <h3>{{h3}}</h3>
+    <button v-on:click="reverse">reverse header</button>
+    <button :disabled="yes" @click="toggleC">{{text}}</button>
+  </div>
 
-	<br>
-	<br>
+  <br>
+  <br>
 
-	<script src="js/examples.js"></script>
+  <script src="js/examples.js"></script>
 </body>
 </html>

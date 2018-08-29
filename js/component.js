@@ -1,6 +1,9 @@
-// localy registred component
-const message = Vue.component("message-here", {
-  props: ["title", "content"],
+// localy registered component
+const message = Vue.component("messageBox", {
+  props: {
+    title: String,
+    content: String
+  },
   data() {
     return {
       isVisible: true
